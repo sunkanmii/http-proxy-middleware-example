@@ -1,0 +1,20 @@
+{
+  "name": "how-to-use-http-proxy-middleware-with-react",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "json-server --watch db.json --port 5000 --middlewares ./range.cjs",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^7.1.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "json-server": "^0.17.0",
+    "react": "^16.14.0"
+  }
+}
